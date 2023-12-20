@@ -1,0 +1,183 @@
+body {
+	background-image: url(./assets/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: "Montserrat", sans-serif;
+	font-family: "Nunito", sans-serif;
+	margin: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: start;
+	margin-top: 20px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: rgb(68, 0, 136);
+	font-weight: bold;
+	padding: 0 50px;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	height: 88vh;
+	justify-content: center;
+}
+
+.title img {
+	border-radius: 50%;
+	position: absolute;
+}
+
+.name {
+	margin-left: 100px;
+	width: 40%;
+}
+
+.name h1 {
+	font-size: 80px;
+	font-weight: bolder;
+	color: rgb(107, 107, 107);
+}
+
+.name h3 {
+	color: rgb(68, 0, 136);
+}
+
+.name p {
+	color: rgb(68, 0, 136);
+}
+
+.social-media {
+	margin-left: 50px;
+}
+
+.social-media a {
+    padding: 10px;
+}
+
+.title img {
+	margin-right: 867px;
+	box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.87);
+	-webkit-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.87);
+	-moz-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.87);
+}
+
+.circle-shadow {
+	position: relative;
+	width: 320px;
+	height: 400px;
+	border-radius: 50%;
+	background-color: rgb(68, 0, 136, 0.5);
+	z-index: 0;
+	animation-name: rolling;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rolling {
+	0% {
+		transform: rotate(0deg);
+		background-color: rgba(68, 0, 136, 0.5);
+	}
+	50% {
+		transform: rotate(180deg);
+		background-color: rgb(254, 203, 200); /* Change to a different color */
+	}
+	100% {
+		transform: rotate(360deg);
+		background-color: rgba(68, 0, 136, 0.5);
+	}
+}
+
+a:hover {
+	transform: scale(0.8);
+	color: #616161;
+}
+
+a {
+	cursor: url("./assets/cat-s-paw-4-clipart-smaller-01.png"), auto;
+}
+
+.resume-title {
+	display: flex;
+	height: 100px;
+}
+
+.resume-title img {
+	border-radius: 50%;
+	height: 120px;
+    width: 120px;
+}
+
+.resume-body {
+	background-color: rgb(246, 246, 240);
+	padding: 70px;
+	width: 70%;
+}
+
+.resume-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	color: rgb(66, 66, 66);
+}
+
+.resume-name {
+	margin-left: 20px;
+}
+
+.resume-name h1 {
+	color: rgba(68, 0, 136);
+	margin-top: 20px;
+	font-weight: bolder;
+}
+
+.resume-name h3 {
+	background: linear-gradient(rgba(68, 0, 136), rgb(254, 203, 200));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bolder;
+}
+
+.resume-details {
+	display: flex;
+	justify-content: center;
+}
+
+.skills {
+	height: auto;
+	width: 700px;
+	border-right: 2px solid rgba(68, 0, 136);
+}
+
+.skills h2 {
+	font-weight: bolder;
+}
+
+.education-experience {
+	margin-left: 100px;
+}
+
+.education-experience h2 {
+	font-weight: bolder;
+}
+
+.work-experience {
+	margin-top: 50px;
+}
+
+#topBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	cursor: url("./assets/cat-s-paw-4-clipart-smaller-01.png"), auto; /* Add a mouse pointer on hover */
+}
+

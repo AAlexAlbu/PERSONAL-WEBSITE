@@ -8,6 +8,40 @@ body {
 	margin: 0;
 }
 
+body.dark-theme {
+	background-image: url(./assets/background-dark-01.jpg);
+}
+
+body.dark-theme a, body.dark-theme h1, body.dark-theme p, body.dark-theme h3, body.dark-theme h2, body.dark-theme li, body.dark-theme h4, body.dark-theme footer {
+	color: white;
+}
+
+body.dark-theme #light-bulb {
+	background-color: rgb(80,16,16);
+}
+
+body.dark-theme .chain  {
+	border-right: 2px dotted  rgb(255, 255, 255);;
+}
+
+body.dark-theme .handle {
+	background-color: rgb(255, 255, 255);;
+}
+
+body.dark-theme .bulb {
+	border: 1px solid rgb(255, 255, 255);
+	background-color: rgb(91, 24, 24);
+}
+
+body.dark-theme .bulb::before, body.dark-theme .bulb::after, body.dark-theme .inferior-bulb{
+	border: 1px solid rgb(255, 255, 255);
+	background-color: #fff;
+}
+
+body.dark-theme .resume-body {
+	background-color: rgb(8, 8, 8, 0.5);
+}
+
 .navbar {
 	display: flex;
 	justify-content: start;
@@ -20,6 +54,94 @@ body {
 	font-weight: bold;
 	padding: 0 50px;
 }
+
+.light-bulb {
+	
+	margin-left: 95%;
+	margin-top: -2px;
+}
+
+.bulb {
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgb(68, 0, 136);
+	border-radius: 50%;
+	background-color: yellow;
+}
+
+.bulb::before {
+	display: inline-block;
+	content: " ";
+	width: 10px;
+	height: 9px;
+	border: 1px solid rgb(68, 0, 136);
+	border-radius: 3px;
+	background-color: rgb(68, 0, 136);
+	translate: 0px 18px;
+}
+
+.bulb::after {
+	display: inline-block;
+	content: " ";
+	width: 12px;
+	height: 3px;
+	border: 1px solid rgb(68, 0, 136);
+	border-radius: 3px;
+	background-color: rgb(68, 0, 136);
+	translate: 0px -13px;
+}
+
+.inferior-bulb {
+	width: 10px;
+	height: 3px;
+	border: 1px solid rgb(68, 0, 136);
+	border-radius: 3px;
+	background-color: rgb(68, 0, 136);
+	translate: 9px 8px;
+}
+
+
+#light-bulb {
+	border: none;
+	background-color: rgb(242, 188, 185);
+}
+
+.chain {
+	width: 20px;
+	height: 20px;
+	border-right: 2px dotted  rgb(68, 0, 136);
+	translate: 2px 3px;
+}
+
+.handle {
+	width: 7px;
+	height: 7px;
+	background-color:rgb(68, 0, 136);
+	border-radius: 50%;
+	translate: 17.5px 1px;
+	cursor: url("./assets/cat-s-paw-4-clipart-smaller-01.png"), auto;
+	
+}
+
+#pull-chain.pulled .chain {
+    height: 30px;
+}
+
+#pull-chain .chain {
+    /* removed other declarations for clarity */
+    transition: height 0.1s ease-in-out;
+}
+
+
+.dark-mode {
+	background-color: #222;
+	color: #fff;
+  }
+  
+  .dark-mode .navbar {
+	background-color: #333;
+	/* Add more styles for dark mode elements */
+  }
 
 .title {
 	display: flex;

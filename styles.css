@@ -42,6 +42,10 @@ body.dark-theme .resume-body {
 	background-color: rgb(8, 8, 8, 0.5);
 }
 
+body.dark-theme .skills {
+	border-right: 2px solid rgb(255, 255, 255);
+}
+
 .navbar {
 	display: flex;
 	justify-content: start;

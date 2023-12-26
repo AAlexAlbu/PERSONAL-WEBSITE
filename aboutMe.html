@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About me</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body id="homepage">
+		<div class="homepage">
+			<div class="navbar">
+				<a href="index.html">Home</a>
+				<a href="">About me</a>
+				<a href="resume.html">Resume</a>
+				<a href="">Portfolio</a>
+				<a href="contact.html"> Contact</a>
+				<div class="light-bulb">
+					<button id="light-bulb" onclick="toggleFunction()">
+						<div class="bulb">
+							<div class="inferior-bulb"></div>
+						</div>
+					</button>
+					<div id="pull-chain" onclick="toggleFunction()">
+						<div class="chain"></div>
+						<div class="handle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="about-me-content">
+				<img
+					src="./assets/20230921_175054-01.jpeg"
+					alt="profile photo"
+					height="300px"
+				/>
+				<p id="about-me">
+					&nbsp &nbsp &nbsp &nbsp Hello there! I'm Alexandra Albu, a passionate
+					individual embarking on an exciting transition from a decade-long
+					tenure in the dynamic world of hospitality management to the boundless
+					realm of front-end development. <br />
+					&nbsp &nbsp &nbsp &nbsp With nearly ten years of experience navigating
+					the demands of the hospitality sector, predominantly in management
+					roles, I've honed my skills in problem-solving, team leadership, and
+					delivering exceptional experiences. However, fueled by an insatiable
+					curiosity and a desire for a new challenge, I've charted a new course
+					toward the world of coding and development. <br />
+					&nbsp &nbsp &nbsp &nbsp My journey began with a dedicated nine-month
+					immersive course where I delved deep into the foundational languages
+					of the web: HTML, CSS, and JavaScript, expanding my repertoire to
+					include React—a powerful JavaScript library. The experience was
+					transformative, and I'm now equipped with a solid understanding of
+					these technologies, eager to apply them in creative and innovative
+					ways.<br />
+					&nbsp &nbsp &nbsp &nbsp As I venture forth into this exciting new
+					chapter, I am excited to merge the wealth of knowledge gained from
+					both my hospitality background and my newfound expertise in web
+					development. My goal is to craft digital experiences that are not just
+					visually stunning but also intuitive, efficient, and user-centric.
+					<br />
+					&nbsp &nbsp &nbsp &nbsp This portfolio is a canvas where I showcase
+					not just my technical skills, but a fusion of my past experiences and
+					my enthusiasm for creating engaging, user-friendly web interfaces.
+				</p>
+			</div>
+			<footer class="ms-5">© Albu Alexandra. All rights reserved.</footer>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>

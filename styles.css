@@ -1,13 +1,13 @@
-html {
-    height: 100%;              /* for the page to take full window height */
-    box-sizing: border-box;    /* to have the footer displayed at the bottom of the page without scrolling */
-}
+/* html {
+    height: 100%;              
+    box-sizing: border-box;   
+} */
 
-*,
+/* *,
 *:before,
 *:after {
-    box-sizing: inherit;       /* enable the "border-box effect" everywhere */
-}
+    box-sizing: inherit;       
+} */
 
 body {
 	background-image: url(./assets/background.jpg);
@@ -21,8 +21,6 @@ body {
 	min-height: 100%;
 	position: relative;        /* for the footer to move with the page size */         /* for the footer to be at the bottom */
     padding-bottom: 6rem;
-	/* display: flex;
-	flex-direction: column; */
 }
 /* dark theme styling */
 
@@ -174,13 +172,11 @@ body.dark-theme .separator {
 
 /* homepage styling */
 
-.homepage {
+/* .homepage {
 	height: 95vh;
-}
+} */
 
 .navbar {
-	display: flex;
-	justify-content: start;
 	margin-top: 20px;
 }
 
@@ -296,6 +292,7 @@ a {
 		width: 380px;
 		height: 320px;
 	}
+	
 }
 @media (max-width: 700px) {
 	.title {
@@ -329,6 +326,7 @@ a {
 	.circle-shadow {
 		display: none;
 	}
+	body {background-size:auto;}
 }
 /* about me styling */
 
@@ -336,7 +334,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100%;
+	min-height: 100vh;
 }
 
 .about-me-content p {
@@ -366,6 +364,7 @@ a {
 		margin-top: 20px;
 	}
 	.about-me-content img {
+		margin-top: 25px;
 		height: 200px;
 		width: 200px;
 		padding: 10px;
@@ -446,6 +445,7 @@ a {
 	height: auto;
 	width: 700px;
 	border-right: 2px solid #440088;
+	padding-right: 40px;
 }
 
 .skills h2 {
@@ -453,7 +453,7 @@ a {
 }
 
 .education-experience {
-	margin-left: 100px;
+	margin-left: 80px;
 }
 
 .education-experience h2 {
@@ -472,10 +472,47 @@ a {
 	cursor: url("./assets/cat-s-paw-4-clipart-smaller-01.png"), auto; /* Add a mouse pointer on hover */
 }
 
+@media (max-width: 1000px) {
+	.education-experience {margin-left: 40px;}
+	.education-experience li {font-size: 15px;}
+	.resume-body {padding: 50px; width: 90%;}
+	.resume-body h4 {font-size: 20px;}
+}
+
+@media (max-width: 700px) {
+	.resume-container {margin-top: 20px;}
+	.resume-body {width: 90%; padding: 20px; }
+	.resume-body h1 { font-size: 30px;}
+	.resume-body h2 { font-size: 25px; margin: 0;}
+	.resume-body h3 { font-size: 20px; margin: 0;}
+	.resume-body h4 { font-size: 15px; margin-bottom: 3px;}
+	.resume-body h5 { font-size: 10px; margin: 0;}
+	.resume-details li {font-size: 15px;}
+	.skills {padding-right: 10px; border-right: 1px solid #440088;}
+	.education-experience {margin-left: 30px;}
+	.education-experience ul {padding: 10px;}
+}
+
+@media (max-width: 412px) {
+	.resume-container {margin: 20px;}
+	.resume-body {width: 100%; padding: 20px; }
+	.resume-name h1  {font-size: 30px;}
+	.resume-name h3  {font-size: 15px;}
+	.resume-details h2 {font-size: 20px;}
+	.resume-details h3 {font-size: 15px;}
+	.resume-details li {font-size: 10px;}
+	.skills {padding-right: 10px; border-right: 1px solid #440088;}
+	.education-experience {margin-left: 30px;}
+	.education-experience h4 {font-size: 10px;}
+	.education-experience h5 {font-size: 8px;}
+	.education-experience ul {padding: 10px;}
+}
+
+
 /* contact page styling */
 
 .contact-body {
-	height: 70vh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -541,6 +578,26 @@ a {
 	width: 3px;
 	height: 260px;
 	background-color: #440088;
+}
+
+@media (max-width: 700px) {
+	.contact-body {margin: 0;}
+	.contact-card {width: 400px; justify-content: center; }
+	.contact-content {flex-direction: column; display: block}
+	.contact-content-name {padding: 30px 0 0 0; }
+	.contact-content h2 {font-size: 25px;}
+	.contact-content p {font-size: 15px;}
+	.contact-content-social {padding: 20px 0 0 0;}
+	.separator {display: none;}
+	.top-pattern {display: none;}
+	.bottom-pattern {display: none;}
+}
+@media (max-width: 412px) {
+	.contact-card {width: 300px; justify-content: center; }
+	.contact-content h2 {font-size: 20px;}
+	.contact-content h6 {font-size: 10px;}
+	.contact-content p {font-size: 10px;}
+	.contact-content-social {padding: 20px 0 0 0;}
 }
 
 .footer {

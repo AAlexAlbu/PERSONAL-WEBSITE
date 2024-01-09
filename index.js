@@ -26,6 +26,10 @@ pull.addEventListener(
 	"click",
 	function () {
 		pull.classList.toggle("pulled");
+		// Check if the chain is pulled
+        var isPulled = pull.classList.contains("pulled");
+		// Store the state in sessionStorage
+        sessionStorage.setItem("isChainPulled", isPulled ? "true" : "false");
 	},
 	false
 );
@@ -50,6 +54,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	} else {
 		document.body.classList.remove("dark-theme");
 	}
+
+	var isPulled = sessionStorage.getItem("isChainPulled");
+    var pullChain = document.getElementById("pull-chain");
+
+    if (isPulled === "true") {
+        pullChain.classList.add("pulled");
+    } else {
+        pullChain.classList.remove("pulled");
+    }
 });
 
 

@@ -17,23 +17,44 @@
 
 <body id="resume" >
 	<div class="resume-page">
-		<div class="navbar">
-			<a href='index.html'>Home</a>
-			<a href="aboutMe.html">About me</a>
-			<a href="resume.html">Resume</a>
-			<a href="">Portfolio</a>
-			<a href="contact.html"> Contact</a>
-			<div class="light-bulb">
-				<button id="light-bulb" onclick="toggleFunction()">
-					<div class="bulb">
-						<div class="inferior-bulb"></div>
-					</div>
-				</button>
-				<div id="pull-chain" onclick="toggleFunction()">
-					<div class="chain"></div>
-					<div class="handle"></div>
+		<nav class="navbar navbar-expand-lg ">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+						<li class="nav-item me-5">
+							<a class="nav-link" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item me-5">
+							<a class="nav-link" href="aboutMe.html">About me</a>
+						</li>
+						<li class="nav-item me-5">
+							<a class="nav-link" href="resume.html">Resume</a>
+						</li>
+						<li class="nav-item me-5">
+							<a class="nav-link" href="resume.html">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+	
+					</ul>
+					
 				</div>
+				<form class="d-flex" role="search">
+					<div class="light-bulb">
+						<button id="light-bulb" onclick="toggleFunction()">
+							<div class="bulb">
+								<div class="inferior-bulb"></div>
+							</div>
+						</button>
+						<div id="pull-chain" onclick="toggleFunction()">
+							<div class="chain"></div>
+							<div class="handle"></div>
+						</div>
+					</div>
+				</form>
 			</div>
+		</nav>
 			<div class="resume-container">
 				<div class="resume-body">
 					<div class="resume-title mb-5">
@@ -251,8 +272,9 @@
 					</button>
 				</div>
 			</div>
-			<footer class="mt-5 ms-5">© Albu Alexandra. All rights reserved.</footer>
+			
 		</div>
+		<footer class="footer">© Albu Alexandra. All rights reserved.</footer>
 		<script src="./index.js"></script>
 </body>
 

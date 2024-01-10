@@ -19,8 +19,8 @@ body {
 	margin: 0;
 	padding: 0;
 	min-height: 100%;
-	position: relative;        /* for the footer to move with the page size */         /* for the footer to be at the bottom */
-    padding-bottom: 6rem;
+	position: relative; /* for the footer to move with the page size */ /* for the footer to be at the bottom */
+	padding-bottom: 6rem;
 }
 /* dark theme styling */
 
@@ -54,7 +54,7 @@ body.dark-theme .handle {
 
 body.dark-theme .bulb {
 	border: 1px solid rgb(255, 255, 255);
-	background-color: rgb(91, 24, 24);
+	background-color: rgb(91, 24, 24, 0);
 }
 
 body.dark-theme .bulb::before,
@@ -88,7 +88,9 @@ body.dark-theme .separator {
 }
 
 /* light bulb styling */
-
+.light-bulb {
+	float:right
+}
 .bulb {
 	width: 30px;
 	height: 30px;
@@ -172,12 +174,10 @@ body.dark-theme .separator {
 
 /* homepage styling */
 
-/* .homepage {
-	height: 95vh;
-} */
-
 .navbar {
-	margin-top: 20px;
+	position: absolute;
+	top: 0;
+	width: auto;
 }
 
 .navbar a {
@@ -189,7 +189,7 @@ body.dark-theme .separator {
 
 .title {
 	display: flex;
-	height: 90vh;
+	height: 87vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -292,7 +292,6 @@ a {
 		width: 380px;
 		height: 320px;
 	}
-	
 }
 @media (max-width: 700px) {
 	.title {
@@ -326,15 +325,16 @@ a {
 	.circle-shadow {
 		display: none;
 	}
-	body {background-size:auto;}
+	body {
+		background-size: auto;
+	}
 }
 /* about me styling */
-
 .about-me-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	height: 87vh;
 }
 
 .about-me-content p {
@@ -389,7 +389,6 @@ a {
 		width: 200px;
 		padding: 10px;
 	}
-	
 }
 /* resume page styling */
 
@@ -409,13 +408,13 @@ a {
 	padding: 70px;
 	width: 70%;
 	border-radius: 10px;
+	margin-top:150px;
 }
 
 .resume-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 70px;
 	color: rgb(66, 66, 66);
 }
 
@@ -473,46 +472,108 @@ a {
 }
 
 @media (max-width: 1000px) {
-	.education-experience {margin-left: 40px;}
-	.education-experience li {font-size: 15px;}
-	.resume-body {padding: 50px; width: 90%;}
-	.resume-body h4 {font-size: 20px;}
+	.education-experience {
+		margin-left: 40px;
+	}
+	.education-experience li {
+		font-size: 15px;
+	}
+	.resume-body {
+		padding: 50px;
+		width: 90%;
+	}
+	.resume-body h4 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 700px) {
-	.resume-container {margin-top: 20px;}
-	.resume-body {width: 90%; padding: 20px; }
-	.resume-body h1 { font-size: 30px;}
-	.resume-body h2 { font-size: 25px; margin: 0;}
-	.resume-body h3 { font-size: 20px; margin: 0;}
-	.resume-body h4 { font-size: 15px; margin-bottom: 3px;}
-	.resume-body h5 { font-size: 10px; margin: 0;}
-	.resume-details li {font-size: 15px;}
-	.skills {padding-right: 10px; border-right: 1px solid #440088;}
-	.education-experience {margin-left: 30px;}
-	.education-experience ul {padding: 10px;}
+	.resume-container {
+		margin-top: 20px;
+	}
+	.resume-body {
+		width: 90%;
+		padding: 20px;
+	}
+	.resume-body h1 {
+		font-size: 30px;
+	}
+	.resume-body h2 {
+		font-size: 25px;
+		margin: 0;
+	}
+	.resume-body h3 {
+		font-size: 20px;
+		margin: 0;
+	}
+	.resume-body h4 {
+		font-size: 15px;
+		margin-bottom: 3px;
+	}
+	.resume-body h5 {
+		font-size: 10px;
+		margin: 0;
+	}
+	.resume-details li {
+		font-size: 15px;
+	}
+	.skills {
+		padding-right: 10px;
+		border-right: 1px solid #440088;
+	}
+	.education-experience {
+		margin-left: 30px;
+	}
+	.education-experience ul {
+		padding: 10px;
+	}
 }
 
 @media (max-width: 412px) {
-	.resume-container {margin: 20px;}
-	.resume-body {width: 100%; padding: 20px; }
-	.resume-name h1  {font-size: 30px;}
-	.resume-name h3  {font-size: 15px;}
-	.resume-details h2 {font-size: 20px;}
-	.resume-details h3 {font-size: 15px;}
-	.resume-details li {font-size: 10px;}
-	.skills {padding-right: 10px; border-right: 1px solid #440088;}
-	.education-experience {margin-left: 30px;}
-	.education-experience h4 {font-size: 10px;}
-	.education-experience h5 {font-size: 8px;}
-	.education-experience ul {padding: 10px;}
+	.resume-container {
+		margin: 20px;
+	}
+	.resume-body {
+		width: 100%;
+		padding: 20px;
+	}
+	.resume-name h1 {
+		font-size: 30px;
+	}
+	.resume-name h3 {
+		font-size: 15px;
+	}
+	.resume-details h2 {
+		font-size: 20px;
+	}
+	.resume-details h3 {
+		font-size: 15px;
+	}
+	.resume-details li {
+		font-size: 10px;
+	}
+	.skills {
+		padding-right: 10px;
+		border-right: 1px solid #440088;
+	}
+	.education-experience {
+		margin-left: 30px;
+	}
+	.education-experience h4 {
+		font-size: 10px;
+	}
+	.education-experience h5 {
+		font-size: 8px;
+	}
+	.education-experience ul {
+		padding: 10px;
+	}
 }
-
 
 /* contact page styling */
 
 .contact-body {
-	height: 100vh;
+	height: 87vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -581,28 +642,61 @@ a {
 }
 
 @media (max-width: 700px) {
-	.contact-body {margin: 0;}
-	.contact-card {width: 400px; justify-content: center; }
-	.contact-content {flex-direction: column; display: block}
-	.contact-content-name {padding: 30px 0 0 0; }
-	.contact-content h2 {font-size: 25px;}
-	.contact-content p {font-size: 15px;}
-	.contact-content-social {padding: 20px 0 0 0;}
-	.separator {display: none;}
-	.top-pattern {display: none;}
-	.bottom-pattern {display: none;}
+	.contact-body {
+		margin: 0;
+	}
+	.contact-card {
+		width: 400px;
+		justify-content: center;
+	}
+	.contact-content {
+		flex-direction: column;
+		display: block;
+	}
+	.contact-content-name {
+		padding: 30px 0 0 0;
+	}
+	.contact-content h2 {
+		font-size: 25px;
+	}
+	.contact-content p {
+		font-size: 15px;
+	}
+	.contact-content-social {
+		padding: 20px 0 0 0;
+	}
+	.separator {
+		display: none;
+	}
+	.top-pattern {
+		display: none;
+	}
+	.bottom-pattern {
+		display: none;
+	}
 }
 @media (max-width: 412px) {
-	.contact-card {width: 300px; justify-content: center; }
-	.contact-content h2 {font-size: 20px;}
-	.contact-content h6 {font-size: 10px;}
-	.contact-content p {font-size: 10px;}
-	.contact-content-social {padding: 20px 0 0 0;}
+	.contact-card {
+		width: 300px;
+		justify-content: center;
+	}
+	.contact-content h2 {
+		font-size: 20px;
+	}
+	.contact-content h6 {
+		font-size: 10px;
+	}
+	.contact-content p {
+		font-size: 10px;
+	}
+	.contact-content-social {
+		padding: 20px 0 0 0;
+	}
 }
 
 .footer {
 	color: #440088;
 	padding: 10px;
-	position: absolute;        /* for it to disappear under last body element */
-    bottom: 0;  
+	position: absolute; /* for it to disappear under last body element */
+	bottom: 0;
 }

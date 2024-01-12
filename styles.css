@@ -86,6 +86,25 @@ body.dark-theme .bottom-pattern,
 body.dark-theme .separator {
 	background-color: rgba(212, 169, 255, 0.5);
 }
+body.dark-theme .project-card {
+	background-color: #183124;
+}
+body.dark-theme .portfolio p {
+	
+	color: white;
+}
+body.dark-theme .portfolio a {
+	
+	color: white;
+}
+body.dark-theme .portfolio button {
+	color: white;
+}
+
+body.dark-theme .modal-staff-management {
+	background-color: #183124;
+}
+
 
 /* light bulb styling */
 .light-bulb {
@@ -699,4 +718,35 @@ a {
 	padding: 10px;
 	position: absolute; /* for it to disappear under last body element */
 	bottom: 0;
+}
+
+.project-card {
+	height: 350px;
+}
+
+.card-text {
+	height: 55px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.project-card a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.portfolio a:hover {
+	color: white;
+}
+
+.view-modal-button {
+	color: #440088;
+	border-radius: 5px 5px 5px 5px!important;
+}
+
+@media (max-width: 579px) {
+	.project-card {
+		height: 400px;
+	}
 }

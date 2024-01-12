@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Albu Alexandra</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body id="homepage">
+		<div class="homepage mt-4" id="homepage">
+			<div>
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+								<li class="nav-item me-5">
+									<a class="nav-link" aria-current="page" href="index.html"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item me-5">
+									<a class="nav-link" href="aboutMe.html">About me</a>
+								</li>
+								<li class="nav-item me-5">
+									<a class="nav-link" href="resume.html">Resume</a>
+								</li>
+								<li class="nav-item me-5">
+									<a class="nav-link" href="">Portfolio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="light-bulb mt-2">
+					<button id="light-bulb" onclick="toggleFunction()">
+						<div class="bulb">
+							<div class="inferior-bulb"></div>
+						</div>
+					</button>
+					<div id="pull-chain" onclick="toggleFunction()">
+						<div class="chain"></div>
+						<div class="handle"></div>
+					</div>
+				</div>
+			</div>
+			<main class="portfolio">
+				<section class="py-5 text-center container">
+					<div class="row py-lg-5">
+						<div class="col-lg-6 col-md-8 mx-auto">
+							<h1 class="fw-light">Portfolio</h1>
+							<p class="lead fw-light ">
+								Here are some mock up projects I made in order to practice and
+								improve my skills.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<div class="album py-5">
+					<div class="container">
+						<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+							<div class="col">
+								<div class="card shadow-sm project-card">
+									<img
+										src="./assets/staff-management-project-thumb.png"
+										alt="project thumbnail"
+										class="p-2"
+									/>
+									<div class="card-body">
+										<p class="card-text card-text">
+											Ca proiect final pentru cursul de la SDA am decis sa fac o
+											aplicație concepută pentru a asista departamentul de
+											management în organizarea eficientă a personalului. Având
+											o experiență anterioară în domeniul managementului, am
+											identificat numeroase provocări pe care am încercat să le
+											soluționez prin intermediul acestei aplicații. Astfel, am
+											conturat un instrument care sa ajute procesele de
+											programare, monitorizare și organizare a resurselor umane,
+											cu scopul clar de a îmbunătăți eficiența și
+											productivitatea în cadrul departamentului de management.
+											Aplicatia a fost realizata in React Js si este inca in
+											lucru.
+										</p>
+										<div
+											class="d-flex justify-content-between align-items-center"
+										>
+											<div class="btn-group ">
+												<button
+													type="button"
+													class="btn btn-outline-secondary view-modal-button"
+													data-bs-toggle="modal"
+													data-bs-target="#exampleModal"
+												>
+													View
+												</button>
+												<div
+													class="modal fade modal-xl "
+													id="exampleModal"
+													tabindex="-1"
+													aria-labelledby="exampleModalLabel"
+													aria-hidden="true"
+												>
+													<div class="modal-dialog">
+														<div class="modal-content modal-staff-management">
+															<div class="modal-header">
+																<h1
+																	class="modal-title fs-5"
+																	id="exampleModalLabel"
+																>
+																	EmployeEase
+																</h1>
+																<button
+																	type="button"
+																	class="btn-close"
+																	data-bs-dismiss="modal"
+																	aria-label="Close"
+																></button>
+															</div>
+															<div
+																class="modal-body d-flex flex-column align-items-center"
+															>
+																<p>
+																	Ca proiect final pentru cursul de la SDA am
+																	decis sa fac o aplicație concepută pentru a
+																	asista departamentul de management în
+																	organizarea eficientă a personalului. Având o
+																	experiență anterioară în domeniul
+																	managementului, am identificat numeroase
+																	provocări pe care am încercat să le soluționez
+																	prin intermediul acestei aplicații. Astfel, am
+																	conturat un instrument care sa ajute procesele
+																	de programare, monitorizare și organizare a
+																	resurselor umane, cu scopul clar de a
+																	îmbunătăți eficiența și productivitatea în
+																	cadrul departamentului de management. <br />
+																	Aplicatia a fost realizata in React Js si este
+																	inca in lucru.
+																</p>
+																<video
+																	src="./assets/video project.mp4"
+																	width="1000px"
+																	controls="controls"
+																></video>
+															</div>
+															<div class="modal-footer">
+																<button
+																	type="button"
+																	class="btn btn-secondary"
+																	data-bs-dismiss="modal"
+																>
+																	Close
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- <button
+													type="button"
+													class="btn btn-sm btn-outline-secondary"
+												>
+													View
+												</button> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card shadow-sm project-card">
+									<img src="assets/heroes-game.jpg" alt='project-image' class="p-2">
+									<div class="card-body">
+										<p>
+											This is a game made as part of the OOP class of the SDA course.
+										</p>
+										<div
+											class="d-flex justify-content-between align-items-center"
+										>
+											<div class="btn-group">
+												<button class=" btn btn-outline-secondary"><a href="https://aalexalbu.github.io/Heroes-Game/" target="_blank">View</a></button>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card shadow-sm project-card">
+									<img src="./assets/piano-project.jpg" alt="project-image" class="p-2">
+									<div class="card-body">
+										<p>
+											This is a project made as part of the CSS class of the SDA course.
+										</p>
+										<div
+											class="d-flex justify-content-between align-items-center"
+										>
+										<div class="btn-group">
+											<button class=" btn btn-outline-secondary"><a href="https://aalexalbu.github.io/Pian/" target="_blank">View</a></button>
+											
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="footer">© Albu Alexandra. All rights reserved.</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>
